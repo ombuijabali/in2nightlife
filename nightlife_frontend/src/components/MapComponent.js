@@ -52,7 +52,7 @@ const MapComponent = ({ selectedDrink, selectedMusic, selectedClub }) => {
   });
 
   const { placePredictions, getPlacePredictions } = usePlacesAutocomplete({
-    googleMapsApiKey: 'AIzaSyByFCCOFZUKZq7kr4nNbBlxtDmI4M4lv9s',
+    googleMapsApiKey: 'ENTER_API_KEY_HERE',
   });
 
   useEffect(() => {
