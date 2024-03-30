@@ -1,0 +1,65 @@
+/* Registration form container styles, similar to the login form for consistency */
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f7f6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styles, ensuring all types of inputs have a uniform appearance */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #90a4ae;
+  outline: none;
+}
+
+/* Placeholder styling to enhance readability */
+input::placeholder {
+  color: #b0bec5;
+}
+
+/* Button styles, matching the login form for a cohesive user experience */
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #20809d;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #455a64;
+}
+
+/* Additional styles for the form and inputs for consistency and readability */
+form {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="text"],
+button {
+  display: block;
+  margin-top: 5px;
+}

@@ -1,0 +1,43 @@
+header {
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Fixed height */
+}
+
+
+/* Carousel Styles */
+#areas-of-service {
+  padding: 50px 0;
+}
+
+#areas-of-service .carousel {
+  max-width: 1000px; /* Adjust the width as needed */
+  margin: 0 auto;
+  margin-left: 150px;
+}
+
+#areas-of-service .carousel-item img {
+  border-radius: 5px;
+}
+#areas-of-service .carousel-item img {
+  height: 300px; /* Set the desired fixed height */
+  object-fit: cover; /* Cover to maintain aspect ratio */
+  object-position: center; /* Center the image horizontally */
+  width: 100%;
+}
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  header {
+    height: 300px;
+  }
+  
+  header h1 {
+    font-size: 28px;
+  }
+  
+  #who-we-are {
+    padding: 30px 0;
+  }
+}

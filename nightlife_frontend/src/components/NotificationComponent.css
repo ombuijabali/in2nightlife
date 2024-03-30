@@ -1,0 +1,18 @@
+/* NotificationComponent.css */
+.notification-popup {
+  position: fixed;
+  top: 20%; /* Adjust based on preference */
+  right: 20px;
+  width: 300px; /* Adjust size as needed */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 20px;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.notification-popup h4 {
+  margin-top: 0;
+}
+
+/* Additional styling for the content */

@@ -1,0 +1,99 @@
+/* LandingPage.css */
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  background-image: url('../log3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.combined-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 20px;
+}
+
+.card {
+  background: #222;
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  flex: 1 1 calc(33.33% - 10px);
+  margin: 5px;
+}
+
+/* TopCard.css and AboutCard.css adjustments */
+.top-card, .about-card {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.top-card .overlay, .about-card .overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  font-size: 30px; /* Adjusted for smaller screens */
+  text-align: center;
+}
+
+.top-card .overlay button, .about-card .overlay button {
+  width: 120px;
+  margin-top: 15px;
+}
+
+/* Testimonials Section Adjustment */
+.testimonials-section {
+  margin-top: 50px; /* Reduced margin for smaller screens */
+  justify-content: center;
+  align-items: stretch;
+  padding: 10px;
+}
+
+.testimonial-card {
+  background: #333;
+  color: #fff;
+}
+
+.testimonials-header {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Footer Adjustments for Dark Theme */
+.footer {
+  background-color: #111;
+  color: #ddd;
+}
+
+.footer a {
+  color: #FFD700;
+}
+
+/* Social Icons Color Adjustment */
+.social-icons i {
+  color: #FFD700;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .combined-section {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .card {
+    flex: 1 1 100%;
+  }
+}

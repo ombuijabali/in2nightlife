@@ -1,0 +1,60 @@
+/* Sidebar.css */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.sidebar-icon {
+  background-color: transparent;
+  border: none;
+  color: orange;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-icon i {
+  font-size: 24px;
+}
+
+.sidebar-icon:hover .sidebar-text {
+  display: inline-block;
+}
+
+.sidebar-text {
+  display: none;
+  margin-left: 12px;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-icon:hover {
+  background-color: rgba(255, 165, 0, 0.2);
+}
+
+.sidebar-icon:hover .sidebar-text {
+  opacity: 1;
+}
+
+.sidebar-icon:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.4);
+}
+
+.copyright {
+  margin-top: 370px;
+  padding: 10px;
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+}

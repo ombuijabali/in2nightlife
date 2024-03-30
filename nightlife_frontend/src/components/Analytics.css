@@ -1,0 +1,67 @@
+.analytics-container, .PieChartContainer {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures content fits within the rounded corners */
+  background: linear-gradient(to bottom right, #ffffff, #f0f0f0); /* Simple gradient background */
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px #fff;
+}
+
+.PieChart {
+  margin-bottom: 10px;
+}
+
+.PieChartContainer {
+  border: 2px solid #ddd; /* Border color */
+  border-radius: 10px; /* Border radius */
+  padding: 20px;
+  background-color: #f9f9f9; /* Background color */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a 3D effect */
+}
+
+/* Container styling */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adds space between elements */
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Shared select styling */
+.filters select {
+  padding: 10px 24px;
+  border-radius: 20px; /* More pronounced rounded corners */
+  border: 2px solid #e2e2e2; /* Slightly thicker border with lighter color */
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px; /* Larger font size for better readability */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions for interaction */
+}
+
+/* Hover state */
+.filters select:hover {
+  border-color: #a2a2a2; /* Darker border on hover */
+}
+
+/* Focus state */
+.filters select:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight color for focus */
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.25); /* Subtle glow effect */
+}
+
+/* Option styling (if needed for customization beyond default browser styles) */
+.filters select option {
+  padding: 5px 0;
+}

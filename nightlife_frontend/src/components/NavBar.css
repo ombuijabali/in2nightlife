@@ -1,0 +1,149 @@
+.nav-item .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px; /* Add margin between the nav items */
+}
+
+.nav-item .nav-link i {
+  color: rgba(0,0,0,.55); /* Adjust color to match your theme */
+  font-size: 2rem; /* Increase font size for better visibility */
+  margin-right: 30px; /* Add some space between icons if they are side by side */
+  
+}
+
+.nav-item .nav-link:hover i,
+.nav-item .nav-link.active i {
+  color: #fff; /* Change to a color that stands out on hover/active */
+}
+
+.nav-item button.nav-link {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Specific to NavLink active state */
+.nav-item .active {
+  border-bottom: 2px solid #fff; /* Optional: adds a bottom border to the active icon */
+}
+
+/* CustomButton.css */
+.nav-link-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out; 
+}
+
+.nav-link-button:hover, .nav-link-button:focus, .nav-link-button:active {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #004085;
+}
+
+.auth-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  background-color: #1A2421; /* Match the navbar background or choose a different one for distinction */
+}
+
+.auth-actions a, .auth-actions button {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px; /* Adjust size as needed */
+  margin: 0 10px; /* Space between elements */
+  transition: color 0.3s ease-in-out;
+}
+
+.auth-actions a:hover, .auth-actions button:hover {
+  color: #fff; /* Highlight on hover */
+  text-decoration: none; /* No underline for links on hover */
+}
+
+.auth-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Ensuring the icon style if you use them */
+.auth-actions i {
+  margin-right: 5px; /* Space between icon and text if you decide to use icons */
+}
+
+/* Additional styling for active or focus states if needed */
+.auth-actions a:focus, .auth-actions button:focus,
+.auth-actions a:active, .auth-actions button:active {
+  outline: none;
+  color: #fff; /* More emphasis for active/focus states */
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* Adjust based on your design */
+  margin-left: 600px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0;
+  margin: 8px 0 0;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,.1);
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.search-result-item {
+  padding: 10px 15px;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  color: #333;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover,
+.search-result-item:focus {
+  background-color: #f8f8f8;
+  color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-container {
+    width: 100%; /* Ensure full width on smaller screens */
+    max-width: none; /* Override any max-width for mobile */
+  }
+}

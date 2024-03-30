@@ -1,0 +1,196 @@
+/* InfoWindow Container */
+.info-window-container {
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Heading */
+.info-window-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Images */
+.info-window-images {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  margin-bottom: 12px;
+}
+
+.info-window-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.info-window-image.active {
+  opacity: 1;
+}
+
+/* Rating */
+.info-window-rating {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+/* Address */
+.info-window-address {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+/* Opening Hours */
+.info-window-hours-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.info-window-hours-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.info-window-hour {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.info-window-status {
+  font-size: 14px;
+  font-weight: 600;
+  color: #28a745; /* Green for open */
+}
+
+/* Phone */
+.info-window-phone {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+/* Website */
+.info-window-website {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.info-window-website a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info-window-website a:hover {
+  text-decoration: underline;
+}
+
+/* Close Button */
+.info-window-close {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.info-window-close:hover {
+  background-color: #c82333;
+}
+
+.map-search-icon-container {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  z-index: 10;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.map-search-icon {
+  font-size: 24px;
+  color: #333;
+}
+
+.map-directions-controls {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  z-index: 10;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.map-directions-input {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.map-directions-select {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.map-directions-controls-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.map-directions-controls-close {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.map-directions-button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.map-directions-info {
+  margin-top: 10px;
+}
+
+.map-directions-controls-close {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 150px;
+}
